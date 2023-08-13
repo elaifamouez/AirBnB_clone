@@ -51,7 +51,7 @@ class HBNBCommand(cmd.Cmd):
 
     def emptyline(self):
         """Do nothing upon receiving an empty line."""
-        pass
+        return False
 
     def default(self, arg):
         """Default behavior for cmd module when input is invalid"""
